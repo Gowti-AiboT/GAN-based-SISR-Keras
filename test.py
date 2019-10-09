@@ -1,5 +1,3 @@
-
-
 from keras.models import Model
 import matplotlib.pyplot as plt
 import tensorflow as tf
@@ -31,7 +29,7 @@ if __name__== "__main__":
 
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('-ihr', '--input_hig_res', action='store', dest='input_hig_res', default='/content/drive/My Drive/test1' ,
+    parser.add_argument('-ihr', '--input_hig_res', action='store', dest='input_hig_res', default='/content/drive/My Drive/test' ,
                     help='Path for input images Hig resolution')
                     
     parser.add_argument('-ilr', '--input_low_res', action='store', dest='input_low_res', default='./data_lr/' ,
@@ -40,7 +38,7 @@ if __name__== "__main__":
     parser.add_argument('-o', '--output_dir', action='store', dest='output_dir', default='/content/drive/My Drive/pre_trained/' ,
                     help='Path for Output images')
     
-    parser.add_argument('-m', '--model_dir', action='store', dest='model_dir', default='/content/drive/My Drive/new_model/gen_model300.h5' ,
+    parser.add_argument('-m', '--model_dir', action='store', dest='model_dir', default='/content/drive/My Drive/new_model1/gen_model900.h5' ,
                     help='Path for model')
                     
     parser.add_argument('-n', '--number_of_images', action='store', dest='number_of_images', default=5 ,
@@ -62,7 +60,3 @@ if __name__== "__main__":
         
     else:
         print("No such option")
-
-
-
-
