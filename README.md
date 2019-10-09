@@ -54,7 +54,7 @@ https://drive.google.com/file/d/1w_C4LDSzgiqpDMArdcvPZtYz3gDNFGE_/view?usp=shari
 
 Image Result format - (LR , SR , HR)
 
-**900**
+**900epochs**
 
 Test results are not satisfactory when trained for 900 epochs and batch size-16
 ![Image of 900epochs](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/900epochs.png)
