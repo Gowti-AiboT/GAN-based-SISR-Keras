@@ -46,7 +46,9 @@ Generate the Photorealistic high resolution images(image size -196x196) from a s
 10.Time Taken – 3 hours /100 epochs.
 
 **Output:**
+
 Image Result format - (LR , SR , HR)
+
 **900**
 
 Test results are not satisfactory when trained for 900 epochs and batch size-16
