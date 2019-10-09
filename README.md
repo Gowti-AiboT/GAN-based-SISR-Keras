@@ -33,7 +33,7 @@ Generate the Photorealistic high resolution images(image size -196x196) from a s
 **Output:**
 **900**
 Test results are not satisfactory when trained for 900 epochs and batch size-16
-!(https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/900epochs.png)
+![Image of 900epochs](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/900epochs.png)
 
 **3000epochs**
 Test results are satisfactory when trained for 3000 epochs and batch size-64
