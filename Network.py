@@ -28,15 +28,12 @@ def res_block_gen(model, kernal_size, filters, strides):
     
     return model
     
-    
+ #Upscaling block   
 def up_sampling_block(model, kernal_size, upscale, strides):
     
-    # In place of Conv2D and UpSampling2D we can also use Conv2DTranspose (Both are used for Deconvolution)
-    # Even we can have our own function for deconvolution (i.e one made in Utils.py)
-    #model = Conv2DTranspose(filters = filters, kernel_size = kernal_size, strides = strides, padding = "same")(model)
     #print(model.shape)
     last_filter_size = model.shape[3]
-    upscaled_size = int(last_filter_size * upscale)#as per concept of sub_pixel convolution
+    upscaled_size = int(last_filter_size * upscale)#as per concept of sub_pixel convolution (H,W,s^2*c) - Increasing channel size
     #print(upscaled_size)
     model = Conv2D(filters = upscaled_size, kernel_size = kernal_size, strides = strides, padding = "same")(model)
     model = UpSampling2D(size = upscale)(model)
