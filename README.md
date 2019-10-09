@@ -31,16 +31,20 @@ Generate the Photorealistic high resolution images(image size -196x196) from a s
 10.Time Taken – 3 hours /100 epochs.
 
 **Output:**
+Image Result format - (LR , SR , HR)
 **900**
+
 Test results are not satisfactory when trained for 900 epochs and batch size-16
 ![Image of 900epochs](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/900epochs.png)
 
 **3000epochs**
+
 Test results are satisfactory when trained for 3000 epochs and batch size-64
-!(https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/3000epochs.png)
+![Image of 3000epochs](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/3000epochs.png)
 
 **Evaluation_table**
-!(https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/table.png)
+
+![Image of table](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/table.png)
 
 **Paper Reference**
 https://arxiv.org/abs/1609.04802
