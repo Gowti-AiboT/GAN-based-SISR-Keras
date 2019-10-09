@@ -6,7 +6,7 @@ Generate the Photorealistic high resolution images(image size -196x196) from a s
 
 **For detailed Information on concepts:**
 
-https://drive.google.com/open?id=1w_C4LDSzgiqpDMArdcvPZtYz3gDNFGE_
+https://drive.google.com/file/d/1w_C4LDSzgiqpDMArdcvPZtYz3gDNFGE_/view?usp=sharing
 
 
 **GAN based SISR Architecture:**
