@@ -11,23 +11,38 @@ Generate the Photorealistic high resolution images(image size -196x196) from a s
 ![Image of Network](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/Architecture_Images/network.jpg)
 
 **Attachment Structure**
+
 1.Network.py : Contains Generator and Discriminator Network
+
 2.Utils.py   : Contains utilities to process images
+
 3.Utils_model.py : Contains optimizer and content loss code
+
 4.train.py   : Used for training the model
+
 5.test.py    : To test the model
 
 
 **Working Enivornment**
+
 1.Training dataset – COCO2019
+
 2.Test dataset – Set5
+
 3.Training size – 800 images
+
 4.Scale – 4x
+
 5.LR Image size – 49 * 49 , HR Image size  - 196*196
+
 6.Batch size – 16
+
 7.GPU used – Nvidia Tesla K80(colab Allocation)
+
 8.Platform Used : Google colab , Spyder (Local Machine-Laptop)
+
 9.Tools Used : Keras ,Backend – Tensorflow , numpy,PIL ,os, argparse , skimage
+
 10.Time Taken – 3 hours /100 epochs.
 
 **Output:**
@@ -47,8 +62,11 @@ Test results are satisfactory when trained for 3000 epochs and batch size-64
 ![Image of table](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/table.png)
 
 **Paper Reference**
+
 https://arxiv.org/abs/1609.04802
+
 **Reference:**
+
 1.	https://medium.com/@birla.deepak26/single-image-super-resolution-using-gans-keras-aca310f33112
 2.	https://github.com/deepak112/Keras-SRGAN
 3.	https://github.com/leftthomas/SRGAN
