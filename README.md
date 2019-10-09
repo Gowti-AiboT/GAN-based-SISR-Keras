@@ -11,27 +11,36 @@ Generate the Photorealistic high resolution images(image size -196x196) from a s
 ![Image of Network](https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/Architecture_Images/network.jpg)
 
 **Attachment Structure**
-Network.py : Contains Generator and Discriminator Network
-Utils.py   : Contains utilities to process images
-Utils_model.py : Contains optimizer and content loss code
-train.py   : Used for training the model
-test.py    : To test the model
+1.Network.py : Contains Generator and Discriminator Network
+2.Utils.py   : Contains utilities to process images
+3.Utils_model.py : Contains optimizer and content loss code
+4.train.py   : Used for training the model
+5.test.py    : To test the model
 
 
 **Working Enivornment**
-Training dataset – COCO2019
-Test dataset – Set5
-Training size – 800 images
-Scale – 4x
-LR Image size – 49 * 49 , HR Image size  - 196*196
-Batch size – 16
-GPU used – Nvidia Tesla K80(colab Allocation)
-Platform Used : Google colab , Spyder (Local Machine-Laptop)
-Tools Used : Keras ,Backend – Tensorflow , numpy,PIL ,os, argparse , skimage
-Time Taken – 3 hours /100 epochs.
+1.Training dataset – COCO2019
+2.Test dataset – Set5
+3.Training size – 800 images
+4.Scale – 4x
+5.LR Image size – 49 * 49 , HR Image size  - 196*196
+6.Batch size – 16
+7.GPU used – Nvidia Tesla K80(colab Allocation)
+8.Platform Used : Google colab , Spyder (Local Machine-Laptop)
+9.Tools Used : Keras ,Backend – Tensorflow , numpy,PIL ,os, argparse , skimage
+10.Time Taken – 3 hours /100 epochs.
 
 **Output:**
-**Evaluation Result:**
+**900**
+Test results are not satisfactory when trained for 900 epochs and batch size-16
+!(https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/900epochs.png)
+
+**3000epochs**
+Test results are satisfactory when trained for 3000 epochs and batch size-64
+!(https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/3000epochs.png)
+
+**Evaluation_table**
+!(https://github.com/Gowti-AiboT/GAN-based-SISR-Keras/blob/master/table.png)
 
 **Paper Reference**
 https://arxiv.org/abs/1609.04802
