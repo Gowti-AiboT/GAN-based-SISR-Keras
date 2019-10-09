@@ -229,13 +229,8 @@ def plot_test_generated_images(output_dir, generator, x_test_lr, figsize=(5, 5))
     
         #plt.show()
 
-#import math
-#def PSNR(y_true, y_pred):
-   # max_pixel = 1.0
-    #return 10.0 * (1.0 / math.log(10)) * K.log((max_pixel ** 2) / (K.mean(K.square(y_pred - 
-#y_true))))
-    
-    
+
+        
     
 def evaluate(x_test_hr, x_test_lr,generator):
     image_batch_hr = denormalize(x_test_hr)
@@ -251,10 +246,6 @@ def evaluate(x_test_hr, x_test_lr,generator):
         t = (np.sum(np.square(np.subtract(a,b)))/len(a))
         #print(t)
         mse = mse + t #channels*rows*columns
-        
-    #index = np.random.randint(0, x_test_hr.shape[0], size=1) 
-    #a=image_batch_hr[index].flatten()
-    #b=generated_image[index].flatten()
     mse_n = mse/x_test_hr.shape[0] 
     psnr =  20*np.log10(255/np.sqrt(mse_n))
     print(f'psnr score for test_generated_images is:{psnr}')
