@@ -1,5 +1,3 @@
-
-
 from Network import Generator, Discriminator
 import Utils_model, Utils
 from Utils_model import VGG_LOSS
@@ -43,8 +41,9 @@ def train(epochs, batch_size, input_dir, output_dir, model_save_dir, number_of_i
     discriminator = Discriminator(image_shape).discriminator()
 
     optimizer = Utils_model.get_optimizer()
-    #generator.load_weights('/content/drive/My Drive/pre_trained/gen_model100.h5',by_name=True)
+    #generator.load_weights('/content/drive/My Drive/new_model2/gen_model900.h5',by_name=True) #to load pre-trained generator model to continue training further from where we left.
     generator.compile(loss=loss.vgg_loss, optimizer=optimizer)
+    #discriminator.load_weights('/content/drive/My Drive/new_model2/dis_model900.h5',by_name=True)  #to load pre-trained generator model to continue training further from where we left.
     discriminator.compile(loss="binary_crossentropy", optimizer=optimizer)
     
     gan = get_gan_network(discriminator, shape, generator, optimizer, loss.vgg_loss)
@@ -111,10 +110,10 @@ if __name__== "__main__":
     parser.add_argument('-b', '--batch_size', action='store', dest='batch_size', default=16,
                     help='Batch Size', type=int)
                     
-    parser.add_argument('-e', '--epochs', action='store', dest='epochs', default=500 ,
+    parser.add_argument('-e', '--epochs', action='store', dest='epochs', default=900 ,
                     help='number of iteratios for trainig', type=int)
                     
-    parser.add_argument('-n', '--number_of_images', action='store', dest='number_of_images', default=940 ,
+    parser.add_argument('-n', '--number_of_images', action='store', dest='number_of_images', default=1000 ,
                     help='Number of Images', type= int)
                     
     parser.add_argument('-r', '--train_test_ratio', action='store', dest='train_test_ratio', default=0.8 ,
@@ -123,5 +122,3 @@ if __name__== "__main__":
     values = parser.parse_args()
     
     train(values.epochs, values.batch_size, values.input_dir, values.output_dir, values.model_save_dir, values.number_of_images, values.train_test_ratio)
-
-
